@@ -20,8 +20,7 @@ from book import views
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register('api',views.Studentviewset,basename='student')
-
+router.register('apii',views.StudentModelViewSet,basename='student')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
